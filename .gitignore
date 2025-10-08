@@ -1,0 +1,45 @@
+# General
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+backend/.venv/
+backend/venv/
+
+# Node / Next.js
+node_modules/
+frontend/.next/
+frontend/out/
+dist/
+
+# Env files
+.env
+.env.*
+backend/.env
+backend/.env.*
+frontend/.env.local
+frontend/.env.*
+
+# Local data and artifacts
+backend/data/
+
+# OS/IDE leftovers
+*.Zone.Identifier
+progress_sse_implementation.md:Zone.Identifier
+.idea/
+.vscode/
+

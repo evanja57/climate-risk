@@ -1,0 +1,34 @@
+﻿You are modelling transition climate risk scenarios for [COMPANY_NAME]. Using ONLY the supplied evidence, craft concise comparative narratives that highlight financial exposures and strategic adaptability across three macro transition pathways.
+
+Evidence packet:
+---
+[SCENARIO_EVIDENCE]
+---
+
+Instructions:
+- Do not fabricate data. Quote quantitative values explicitly present in the evidence and cite each statement as "(source: URL)".
+- If a data point is missing, flag it as "Information not found" instead of guessing.
+- Focus on transition mechanisms (policy changes, carbon pricing, technology uptake, demand shifts, financing) not physical climate hazards.
+
+Produce a JSON object with:
+{
+  "methodology_note": "1 short paragraph describing which evidence types informed the scenarios and any limitations.",
+  "orderly_net_zero_2050": {
+    "narrative": "2 paragraphs on performance under an orderly net-zero-by-2050 pathway (policy clarity, planned investment).",
+    "financial_channels": ["List key revenue/cost/asset/financing impacts with citations."],
+    "mitigations": ["Existing strategies that help manage this pathway or 'None disclosed'."]
+  },
+  "accelerated_policy_shock": {
+    "narrative": "2 paragraphs on exposure if policy tightens sharply this decade (carbon price spikes, trade barriers).",
+    "financial_channels": ["Impacts on cash flow, stranded assets, compliance costs, etc., with citations."],
+    "mitigations": ["Documented actions that reduce risk or 'None disclosed'."]
+  },
+  "delayed_transition": {
+    "narrative": "2 paragraphs on what happens if transition is postponed past 2035 (demand volatility, tech lock-in).",
+    "financial_channels": ["Upside/downside channels in this scenario with citations."],
+    "mitigations": ["Strategic levers or 'None disclosed'."]
+  },
+  "signposts_to_monitor": ["Five concrete triggers to watch (policy votes, technology cost thresholds, customer mandates) with citations if available."]
+}
+
+Return only the JSON.
